@@ -7,7 +7,9 @@
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script defer src="scripts/main.js"></script>
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+
 </head>
 
 <body>
@@ -63,7 +65,7 @@
 
         </div>
     </nav>
-    <section class="section  container  has-background-info-light is-fullheight box block" id="landing-section">
+    <section class="section  container has-background-info-light is-fullheight box block" id="landing-section">
         <div class="container has-text-centered">
 
             <figure class="image is-128x128 is-inline-block">
@@ -81,7 +83,7 @@
             </p></br>
             <div class="content has-text-justified is-medium">
                 <h1 class="has-text-centered is-family-code"> About me</h1>
-                <div class="notification has-background-danger-light">
+                <div class="notification has-background-white">
                     <p class="block">
                         I grew up in small town Georgia where I went to college and studied
                         classical music performance and Spanish.
@@ -179,21 +181,60 @@
     </section>
     <section class="section block box container has-background-link-light" id="experience">
         <h1 class="title has-text-centered is-family-code">Experience</h1>
+        <h1 class="subtitle is-3 is-family-code has-text-centered">Tech</h1>
         <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth">
-                <h1 class="subtitle is-3 is-family-code has-text-centered">Tech</h1>
+            <div class="column is-three-fifths">
+
                 <figure class="image">
                     <img class="cert" src="images/95D510B0-35E1-4C07-BEE4-F3731F0A9C67_1_201_a.jpeg">
                 </figure>
             </div>
+            <div class="column is-two-fifths">
+                <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-128x128">
+                        <img src="images/Jenna.jpeg">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content is-large">
+                        <p>
+                          <strong>Jenna</strong> <a href="http://jennabeckett.com/?fbclid=IwAR1kCuh-eVg3Y4sEREkDSzd0sFiaNWrSL3WsLmTLGExVLORuC4dJkYxQC9k"><small>Jenna's portfolio</small></a> 
+                          <br>
+                          <strong class="has-text-1" >"</strong> Brandon was a joy to have in class. He was always so excited about the content that he was learning and ready to dig deeper. He has a strong work ethic and natural curiosity that drives his learning process. As part of a team, Brandon took the time to really listen to others which promoted positive collaboration and better overall outcomes. <strong>"</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+            </div>
         </div>
+
         <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="column is-two-fifths">
+                <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-128x128">
+                        <img src="images/Jenna.jpeg">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content is-large">
+                        <p>
+                          <strong>Jenna</strong> <a href="http://jennabeckett.com/?fbclid=IwAR1kCuh-eVg3Y4sEREkDSzd0sFiaNWrSL3WsLmTLGExVLORuC4dJkYxQC9k"><small>Jenna's portfolio</small></a> 
+                          <br>
+                          <strong>"</strong> Brandon was a joy to have in class. He was always so excited about the content that he was learning and ready to dig deeper. He has a strong work ethic and natural curiosity that drives his learning process. As part of a team, Brandon took the time to really listen to others which promoted positive collaboration and better overall outcomes. <strong>"</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+            </div>
+            <div class="column is-three-fifths">
                 <figure class="image">
                     <img class="cert"
                         src="images/Certificate-of-Completion-alejanro001@gmail.com-1620166927-page-001.jpg">
                 </figure>
             </div>
+
 
         </div>
         <div class="columns">
@@ -217,7 +258,9 @@
                         <p class="card-header-title">.Net Full Stack Reservation Web App</p>
                     </div>
                     <div class="card-content">
-                        <div class="content">This is a full stack app that allows you to reserve a time slot with a fictioinal bike shop for bike maintenance. It uses Microsoft's <strong>.Net</strong>  Framework. Built in <strong>C#</strong>  with a <strong> SQL</strong> database.</div>
+                        <div class="content">This is a full stack app that allows you to reserve a time slot with a
+                            fictioinal bike shop for bike maintenance. It uses Microsoft's <strong>.Net</strong>
+                            Framework. Built in <strong>C#</strong> with a <strong> SQL</strong> database.</div>
                     </div>
                     <div class="card-footer">
                         <div class="card-footer-item"> <a href="#">Github repo</a></div>
@@ -237,7 +280,9 @@
                         <p class="card-header-title">Who's That Pokemon!?</p>
                     </div>
                     <div class="card-content">
-                        <div class="content">This is a game of hangman. It is mainly a <strong>JavaScript</strong> app with some <strong>HTML</strong> and <strong>CSS</strong>. It also makes fetch calls to a remote <strong>API</strong> to render images. </div>
+                        <div class="content">This is a game of hangman. It is mainly a <strong>JavaScript</strong> app
+                            with some <strong>HTML</strong> and <strong>CSS</strong>. It also makes fetch calls to a
+                            remote <strong>API</strong> to render images. </div>
                     </div>
                     <div class="card-footer">
                         <div class="card-footer-item"> <a href="#">Github repo</a></div>
@@ -258,7 +303,10 @@
                         <p class="card-header-title">ReactJS simple todo list</p>
                     </div>
                     <div class="card-content">
-                        <div class="content">This project was code along tutorial that broadly coved the powers of <strong>ReactJS</strong>, from using components, hooks, state management, fetch calls, and persisting data to a database. Currently building the exact same app in <strong>VueJS</strong> </div>
+                        <div class="content">This project was code along tutorial that broadly coved the powers of
+                            <strong>ReactJS</strong>, from using components, hooks, state management, fetch calls, and
+                            persisting data to a database. Currently building the exact same app in
+                            <strong>VueJS</strong> </div>
                     </div>
                     <div class="card-footer">
                         <div class="card-footer-item"> <a href="#">Github repo</a></div>
@@ -278,7 +326,9 @@
                         <p class="card-header-title">Game of war</p>
                     </div>
                     <div class="card-content">
-                        <div class="content">This is a full stack app that allows you to reserve a time slot with a fictioinal bike shop for bike maintenance. It uses Microsoft's .Net Framework. Built in C# with a SQL database.</div>
+                        <div class="content">This is the card game called Game of War. It was built using
+                            <strong>JavaScript</strong> exclusively. It showcases a comprehensive understanding of the
+                            power of vanilla JavaScript. I am working on creating an in-browser experience.</div>
                     </div>
                     <div class="card-footer">
                         <div class="card-footer-item"> <a href="#">Github repo</a></div>
