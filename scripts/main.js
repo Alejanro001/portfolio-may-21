@@ -28,17 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //
 
-// centriqCert.addEventListener('click', function(){
-//   centriqCert.classList.add('animate__fadeInLeft')
-// })
-// window.addEventListener('scroll', ()=>{
-//   if(isInViewport(centriqCert)){
-//     centriqCert.classList.add('animate__fadeInLeft')
-//   } 
-// }, false)
-// window.addEventListener('scroll', ()=>{
-//   console.log(centriqCert.getBoundingClientRect());
-// })
+
 let centriqCert = document.querySelector('.centriqCert')
 let gaCert = document.querySelector('.ga-cert')
 // let animateOnView = function(element, animation){
