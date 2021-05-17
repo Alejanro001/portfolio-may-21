@@ -24,16 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 //THIS IS FOR THE TYPEWRITER EFFECT
-let titleText = document.querySelector('.title-text')
-console.log(titleText)
-let titles = ['software engineer', 'web developer']
 
 
-
-console.log(titles[0].split(''))
-
-
-
+//
+let centriqCert = document.querySelector('.centriqCert')
+// centriqCert.addEventListener('click', function(){
+//   centriqCert.classList.add('animate__fadeInLeft')
+// })
+// window.addEventListener('scroll', ()=>{
+//   if(isInViewport(centriqCert)){
+//     centriqCert.classList.add('animate__fadeInLeft')
+//   } 
+// }, false)
+// window.addEventListener('scroll', ()=>{
+//   console.log(centriqCert.getBoundingClientRect());
+// })
 
 
 
