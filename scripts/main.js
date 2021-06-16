@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let centriqCert = document.querySelector('.centriqCert')
 let gaCert = document.querySelector('.ga-cert')
+// const sections = document.querySelectorAll('.section')
+console.log(sections)
 // let animateOnView = function(element, animation){
 //   element.getBoundingClientRect().top < window.innerHeight && element.classList.add(animation)
 // }
@@ -38,10 +40,20 @@ let gaCert = document.querySelector('.ga-cert')
   
   // animateOnView(gaCert, 'animate_fadeInRight')
 
-window.addEventListener('scroll', ()=>{
-  centriqCert.getBoundingClientRect().top < window.innerHeight && centriqCert.classList.add('animate__fadeInLeft')
-  gaCert.getBoundingClientRect().top < window.innerHeight && gaCert.classList.add('animate__fadeInRight')
-} )
+  const fadeIn = (element, animation) =>{
+    element.getBoundingClientRect().top < window.innerHeight && element.classList.add(animation)
+  }
+
+  window.addEventListener('scroll',()=>{
+     fadeIn(centriqCert, "animate__fadeInLeft")
+     fadeIn(gaCert, "animate__fadeInRight")
+  })
+
+
+// window.addEventListener('scroll', ()=>{
+//   centriqCert.getBoundingClientRect().top < window.innerHeight && centriqCert.classList.add('animate__fadeInLeft')
+//   gaCert.getBoundingClientRect().top < window.innerHeight && gaCert.classList.add('animate__fadeInRight')
+// } )
 
 
 
