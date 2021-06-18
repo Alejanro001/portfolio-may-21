@@ -26,34 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
 //THIS IS FOR THE TYPEWRITER EFFECT
 
 
-//
-
-
+//JS FOR ADDING ANIMATION 
 let centriqCert = document.querySelector('.centriqCert')
 let gaCert = document.querySelector('.ga-cert')
-// const sections = document.querySelectorAll('.section')
-console.log(sections)
-// let animateOnView = function(element, animation){
-//   element.getBoundingClientRect().top < window.innerHeight && element.classList.add(animation)
-// }
-// window.addEventListener('scroll',animateOnView(centriqCert, 'animate_fadeInLeft'))
-  
-  // animateOnView(gaCert, 'animate_fadeInRight')
+
 
   const fadeIn = (element, animation) =>{
     element.getBoundingClientRect().top < window.innerHeight && element.classList.add(animation)
   }
 
   window.addEventListener('scroll',()=>{
-     fadeIn(centriqCert, "animate__fadeInLeft")
-     fadeIn(gaCert, "animate__fadeInRight")
+     fadeIn(centriqCert, "animate__zoomIn")
+     fadeIn(gaCert, "animate__zoomIn")
+     
   })
-
-
-// window.addEventListener('scroll', ()=>{
-//   centriqCert.getBoundingClientRect().top < window.innerHeight && centriqCert.classList.add('animate__fadeInLeft')
-//   gaCert.getBoundingClientRect().top < window.innerHeight && gaCert.classList.add('animate__fadeInRight')
-// } )
 
 
 
